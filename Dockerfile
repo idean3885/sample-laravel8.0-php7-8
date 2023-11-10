@@ -9,7 +9,7 @@ RUN apk update upgrade && \
 #RUN apk add bash
 #RUN sed -i 's/bin\/ash/bin\/bash/g' /etc/passwd
 
-## Installing PHP
+# Installing PHP
 ARG PHP_VERSION=php82
 RUN apk add --no-cache ${PHP_VERSION} \
     ${PHP_VERSION}-common \
