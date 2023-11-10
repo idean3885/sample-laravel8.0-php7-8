@@ -1,7 +1,8 @@
 FROM alpine:3.18
 
-RUN apk update upgrade && \
-    apk add git && \
+RUN apk update \
+RUN apk upgrade --no-cache
+RUN apk add git && \
     apk add ca-certificates && \
     apk add curl
 
