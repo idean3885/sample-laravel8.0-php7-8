@@ -1,6 +1,5 @@
 FROM alpine:3.15
-RUN apk update \
-RUN apk upgrade --no-cache
+RUN apk update && apk upgrade --no-cache
 RUN apk add git && \
     apk add ca-certificates && \
     apk add curl
